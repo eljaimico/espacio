@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio Espacial</title>
+  
+</head>
+<body>
+    <header>
+        <h1>🌌 Mi Portafolio Espacial</h1>
+        <nav>
+            <button onclick="navigateTo('about')">Sobre mí</button>
+            <button onclick="navigateTo('projects')">Proyectos</button>
+            <button onclick="navigateTo('contact')">Contacto</button>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>🚀 Sobre mí</h2>
+            <p>Hola, soy juan david medina , un desarrollador apasionado por el espacio y la tecnología. Me encanta explorar nuevas fronteras, tanto en la programación como en el cosmos.</p>
+        </section>
+        <section id="projects">
+            <h2>🌠 Proyectos</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Proyecto 1: Explorador de Estrellas</h3>
+                    <p>Una herramienta para mapear constelaciones en el cielo nocturno.</p>
+                </div>
+                <div class="project">
+                    <h3>Proyecto 2: App Solar</h3>
+                    <p>Aplicación para rastrear la posición de los planetas en tiempo real.</p>
+                </div>
+                <div class="project">
+                    <h3>Proyecto 3: descubrir vida en marte</h3>
+                    <p>Simulador interactivo de aterrizaje en el planeta rojo.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>📡 Contacto</h2>
+            <p>Escríbeme a: <a href="correo@dominio.commailto:tu">juawak72@gmail.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Portafolio Espacial. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function navigateTo(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+</body>
+</html>
